@@ -1,0 +1,1240 @@
+#!/bin/bash
+echo "<hr>"
+echo "<h1><font color='blue'><b>File Manager</b></font></h1>"
+echo "<hr>"
+echo "<font color='blue'>Starting Folder Sorting</font>"
+echo ""
+
+if [[ -f "/mnt/user/Storage/Google Drive/Server Files/Downloader/config.conf" ]]
+then
+	. "/mnt/user/Storage/Google Drive/Server Files/Downloader/config.conf"
+fi
+
+######################################################################################################################################
+#                                                         Youtube Downloads Fix                                                                #
+######################################################################################################################################
+
+#Check for the folder.
+if [[ -d "/mnt/user/Videos/Youtube/PLRGu90Fqjg2Y-JUEBq1EAJLgIEip7XBiJ/Season 1/" ]] 
+then
+
+    #Moves the Files
+	echo " "
+    cd "/mnt/user/Videos/Youtube/PLRGu90Fqjg2Y-JUEBq1EAJLgIEip7XBiJ/Season 1/"
+    for file in *.* 
+	do
+		mv "$file" "/mnt/user/Videos/Youtube/Youtube Downloads/Season 1"
+	done
+	if [ $debug -ge "2" ]
+	then
+		echo "Youtube Downloads moved."
+	fi
+	
+    #Delete old folder
+    cd "/mnt/user/Videos/Youtube/"
+    rm -r "PLRGu90Fqjg2Y-JUEBq1EAJLgIEip7XBiJ/"
+	if [ $debug -ge "2" ]
+	then
+		echo "Folder deleted."
+	fi
+fi
+
+######################################################################################################################################
+#                                                        VFX Artists React Fix                                                                #
+######################################################################################################################################
+
+#Check for the folder.
+if [[ -d "/mnt/user/Videos/Youtube/PLwVUbPpIRn1QspuvMVVfQvO7RPWnMJ1aA/Season 1/" ]] 
+then
+
+    #Moves the Files
+	echo " "
+    cd "/mnt/user/Videos/Youtube/PLwVUbPpIRn1QspuvMVVfQvO7RPWnMJ1aA/Season 1/"
+    for file in *.* 
+	do
+		mv "$file" "/mnt/user/Videos/Youtube/Corridor Digital/Season 4" 
+		cd "/mnt/user/Videos/Youtube/Corridor Digital/Season 4/"
+		rename S01 S04 *.*
+	done
+	if [ $debug -ge "2" ]
+	then
+		echo "VFX Artists React moved."
+	fi
+	
+    #Delete old folder
+    cd "/mnt/user/Videos/Youtube/"
+    rm -r "PLwVUbPpIRn1QspuvMVVfQvO7RPWnMJ1aA/"
+	if [ $debug -ge "2" ]
+	then
+		echo "Folder deleted."
+	fi
+fi
+
+######################################################################################################################################
+#                                                        Devs React Fix                                                                #
+######################################################################################################################################
+
+#Check for the folder.
+if [[ -d "/mnt/user/Videos/Youtube/PLraFbwCoisJA6eO7VSWtUqLaIFBQq4PCv/Season 1/" ]] 
+then
+
+    #Moves the Files
+	echo " "
+    cd "/mnt/user/Videos/Youtube/PLraFbwCoisJA6eO7VSWtUqLaIFBQq4PCv/Season 1/"
+    for file in *.* 
+	do
+		mv "$file" "/mnt/user/Videos/Youtube/Devs React to Speedruns/Season 1"
+	done
+	if [ $debug -ge "2" ]
+	then
+		echo "Devs React moved."
+	fi
+	
+    #Delete old folder
+    cd "/mnt/user/Videos/Youtube/"
+    rm -r "PLraFbwCoisJA6eO7VSWtUqLaIFBQq4PCv/"
+	if [ $debug -ge "2" ]
+	then
+		echo "Folder deleted."
+	fi
+fi
+
+######################################################################################################################################
+#                                                         TV Demo Videos                                                                #
+######################################################################################################################################
+
+#Check for the folder.
+if [[ -d "/mnt/user/Videos/Youtube/TV Demo Videos/Season 1/" ]] 
+then
+
+    #Moves the Files
+	echo " "
+    cd "/mnt/user/Videos/Youtube/TV Demo Videos/Season 1/"
+    for file in *.* 
+	do
+		mv "$file" "/mnt/user/Videos/Calibration/Demo Videos/Season 1"
+	done
+	if [ $debug -ge "2" ]
+	then
+		echo "TV Demo Videos processed."
+	fi
+	
+    #Delete old folder
+    cd "/mnt/user/Videos/Youtube/"
+    rm -r "TV Demo Videos/"
+	if [ $debug -ge "2" ]
+	then
+		echo "Folder deleted."
+	fi
+fi
+
+######################################################################################################################################
+#                                                         Vines Manager                                                                #
+######################################################################################################################################
+
+#Check for the folder.
+if [[ -d "/mnt/user/Videos/Youtube/Vines/Season 1/" ]] 
+then
+
+    #Moves the Files
+	echo " "
+    cd "/mnt/user/Videos/Youtube/Vines/Season 1/"
+    for file in *.* 
+	do
+		mv "$file" "/mnt/user/Videos/TV/Vine/Season 1/"
+	done
+	if [ $debug -ge "2" ]
+	then
+		echo "Vine processed."
+	fi
+	
+    #Delete old folder
+    cd "/mnt/user/Videos/Youtube/"
+    rm -r "Vines/"
+	if [ $debug -ge "2" ]
+	then
+		echo "Folder deleted."
+	fi
+fi
+
+######################################################################################################################################
+#                                                  Build & Battle Season 1                                                           #
+######################################################################################################################################
+
+#Check for the folder.
+if [[ -d "/mnt/user/Videos/Youtube/BUILD & BATTLE/Season 1/" ]] 
+then
+
+    #Moves the Files
+    cd "/mnt/user/Videos/Youtube/BUILD & BATTLE/Season 1/"
+    mv * "/mnt/user/Videos/Youtube/Build & Battle/Season 1/" 
+	cd "/mnt/user/Videos/Youtube/Build & Battle/Season 1/"
+	if [ $debug -ge "2" ]
+	then
+		echo "Build & Battle processed."
+	fi
+    #Delete old folder
+    cd "/mnt/user/Videos/Youtube/"
+    rm -r "BUILD & BATTLE/"
+    if [ $debug -ge "2" ]
+	then
+		echo "Folder deleted."
+	fi
+fi
+
+######################################################################################################################################
+#                                           Build & Battle Season 3: Gymkhana GRID                                                   #
+######################################################################################################################################
+
+#Check for the folder.
+if [[ -d "/mnt/user/Videos/Youtube/Build & Battle Season 3 - Gymkhana GRID/Season 1/" ]] 
+then
+
+    #Moves the Files
+    cd "/mnt/user/Videos/Youtube/Build & Battle Season 3 - Gymkhana GRID/Season 1/"
+    mv * "/mnt/user/Videos/Youtube/Build & Battle/Season 3/" 
+	cd "/mnt/user/Videos/Youtube/Build & Battle/Season 3/"
+	rename S01 S03 *.*
+	if [ $debug -ge "2" ]
+	then
+		echo "Build & Battle processed."
+	fi
+    #Delete old folder
+    cd "/mnt/user/Videos/Youtube/"
+    rm -r "Build & Battle Season 3 - Gymkhana GRID/"
+    if [ $debug -ge "2" ]
+	then
+		echo "Folder deleted."
+	fi
+fi
+
+######################################################################################################################################
+#                                                        Dale Truck                                                                  #
+######################################################################################################################################
+
+#Check for the folder.
+if [[ -d "/mnt/user/Videos/Youtube/Dale Truck/Season 1/" ]] 
+then
+
+    #Moves the Files
+    cd "/mnt/user/Videos/Youtube/Dale Truck/Season 1/"
+    mv * "/mnt/user/Videos/Youtube/Cleetus McFarland/Season 4/" 
+	cd "/mnt/user/Videos/Youtube/Cleetus McFarland/Season 4/"
+	rename S01 S04 *.*
+	if [ $debug -ge "2" ]
+	then
+		echo "Dale Truck processed."
+	fi
+    #Delete old folder
+    cd "/mnt/user/Videos/Youtube/"
+    rm -r "Dale Truck/"
+    if [ $debug -ge "2" ]
+	then
+		echo "Folder deleted."
+	fi
+fi
+
+######################################################################################################################################
+#                                                     Project Neighbor                                                               #
+######################################################################################################################################
+
+#Check for the folder.
+if [[ -d "/mnt/user/Videos/Youtube/Project Neighbor/Season 1/" ]] 
+then
+
+    #Moves the Files
+    cd "/mnt/user/Videos/Youtube/Project Neighbor/Season 1/"
+    mv * "/mnt/user/Videos/Youtube/Cleetus McFarland/Season 5/" 
+	cd "/mnt/user/Videos/Youtube/Cleetus McFarland/Season 5/"
+	rename S01 S05 *.*
+	if [ $debug -ge "2" ]
+	then
+		echo "Project Neighbor processed."
+	fi
+    #Delete old folder
+    cd "/mnt/user/Videos/Youtube/"
+    rm -r "Project Neighbor/"
+    if [ $debug -ge "2" ]
+	then
+		echo "Folder deleted."
+	fi
+fi
+
+######################################################################################################################################
+#                                                     Auction Corvette                                                               #
+######################################################################################################################################
+
+#Check for the folder.
+if [[ -d "/mnt/user/Videos/Youtube/Auction Corvette/Season 1/" ]] 
+then
+
+    #Moves the Files
+    cd "/mnt/user/Videos/Youtube/Auction Corvette/Season 1/"
+    mv * "/mnt/user/Videos/Youtube/Cleetus McFarland/Season 7/" 
+	cd "/mnt/user/Videos/Youtube/Cleetus McFarland/Season 7/"
+	rename S01 S07 *.*
+	if [ $debug -ge "2" ]
+	then
+		echo "Auction Corvette processed."
+	fi
+    #Delete old folder
+    cd "/mnt/user/Videos/Youtube/"
+    rm -r "Auction Corvette/"
+    if [ $debug -ge "2" ]
+	then
+		echo "Folder deleted."
+	fi
+fi
+
+######################################################################################################################################
+#                                                          Mullet                                                                    #
+######################################################################################################################################
+
+#Check for the folder.
+if [[ -d "/mnt/user/Videos/Youtube/Mullet/Season 1/" ]] 
+then
+
+    #Moves the Files
+    cd "/mnt/user/Videos/Youtube/Mullet/Season 1/"
+    mv * "/mnt/user/Videos/Youtube/Cleetus McFarland/Season 9/" 
+	cd "/mnt/user/Videos/Youtube/Cleetus McFarland/Season 9/"
+	rename S01 S09 *.*
+	if [ $debug -ge "2" ]
+	then
+		echo "Mullet Episode  processed."
+	fi
+    #Delete old folder
+    cd "/mnt/user/Videos/Youtube/"
+    rm -r "Mullet/"
+    if [ $debug -ge "2" ]
+	then
+		echo "Folder deleted."
+	fi
+fi
+
+######################################################################################################################################
+#                                                          Galaxy                                                                    #
+######################################################################################################################################
+
+#Check for the folder.
+if [[ -d "/mnt/user/Videos/Youtube/Ford Galaxy/Season 1/" ]] 
+then
+
+    #Moves the Files
+    cd "/mnt/user/Videos/Youtube/Ford Galaxy/Season 1/"
+    mv * "/mnt/user/Videos/Youtube/Cleetus McFarland/Season 10/" 
+	cd "/mnt/user/Videos/Youtube/Cleetus McFarland/Season 10/"
+	rename S01 S10 *.*
+	if [ $debug -ge "2" ]
+	then
+		echo "Ford Galaxy Episode  processed."
+	fi
+    #Delete old folder
+    cd "/mnt/user/Videos/Youtube/"
+    rm -r "Ford Galaxy/"
+    if [ $debug -ge "2" ]
+	then
+		echo "Folder deleted."
+	fi
+fi
+
+######################################################################################################################################
+#                                                 Rocky Mountain Race Week                                                           #
+######################################################################################################################################
+
+#Check for the folder.
+if [[ -d "/mnt/user/Videos/Youtube/Rocky Mountain Race Week/Season 1/" ]] 
+then
+
+    #Moves the Files
+    cd "/mnt/user/Videos/Youtube/Rocky Mountain Race Week/Season 1/"
+    mv * "/mnt/user/Videos/Youtube/Cleetus McFarland/Season 11/" 
+	cd "/mnt/user/Videos/Youtube/Cleetus McFarland/Season 11/"
+	rename S01 S11 *.*
+	if [ $debug -ge "2" ]
+	then
+		echo "Rocky Mountain Race Week Episode  processed."
+	fi
+    #Delete old folder
+    cd "/mnt/user/Videos/Youtube/"
+    rm -r "Rocky Mountain Race Week/"
+    if [ $debug -ge "2" ]
+	then
+		echo "Folder deleted."
+	fi
+fi
+
+######################################################################################################################################
+#                                                     Project Burnout                                                                #
+######################################################################################################################################
+
+#Check for the folder.
+if [[ -d "/mnt/user/Videos/Youtube/Burnout/Season 1/" ]] 
+then
+
+    #Moves the Files
+    cd "/mnt/user/Videos/Youtube/Burnout/Season 1/"
+    mv * "/mnt/user/Videos/Youtube/Cleetus McFarland/Season 12/" 
+	cd "/mnt/user/Videos/Youtube/Cleetus McFarland/Season 12/"
+	rename S01 S12 *.*
+	if [ $debug -ge "2" ]
+	then
+		echo "Project Burnout processed."
+	fi
+    #Delete old folder
+    cd "/mnt/user/Videos/Youtube/"
+    rm -r "Burnout/"
+    if [ $debug -ge "2" ]
+	then
+		echo "Folder deleted."
+	fi
+fi
+
+######################################################################################################################################
+#                                                      Side-by-Side                                                                  #
+######################################################################################################################################
+
+#Check for the folder.
+if [[ -d "/mnt/user/Videos/Youtube/SXS/Season 1/" ]] 
+then
+
+    #Moves the Files
+    cd "/mnt/user/Videos/Youtube/SXS/Season 1/"
+    mv * "/mnt/user/Videos/Youtube/Cleetus McFarland/Season 13/" 
+	cd "/mnt/user/Videos/Youtube/Cleetus McFarland/Season 13/"
+	rename S01 S13 *.*
+	if [ $debug -ge "2" ]
+	then
+		echo "Cleetus' Side-by-side processed."
+	fi
+    #Delete old folder
+    cd "/mnt/user/Videos/Youtube/"
+    rm -r "SXS/"
+    if [ $debug -ge "2" ]
+	then
+		echo "Folder deleted."
+	fi
+fi
+
+######################################################################################################################################
+#                                                            White Trash                                                             #
+######################################################################################################################################
+
+#Check for the folder.
+if [[ -d "/mnt/user/Videos/Youtube/White Trash/Season 1/" ]] 
+then
+
+    #Moves the Files
+    cd "/mnt/user/Videos/Youtube/White Trash/Season 1/"
+    mv * "/mnt/user/Videos/Youtube/Cleetus McFarland/Season 18/" 
+	cd "/mnt/user/Videos/Youtube/Cleetus McFarland/Season 18/"
+	rename S01 S18 *.*
+	if [ $debug -ge "2" ]
+	then
+		echo "White Trash processed."
+	fi
+    #Delete old folder
+    cd "/mnt/user/Videos/Youtube/"
+    rm -r "White Trash/"
+    if [ $debug -ge "2" ]
+	then
+		echo "Folder deleted."
+	fi
+fi
+
+######################################################################################################################################
+#                                                          Mystery Machine                                                           #
+######################################################################################################################################
+
+#Check for the folder.
+if [[ -d "/mnt/user/Videos/Youtube/Mystery Machine/Season 1/" ]] 
+then
+
+    #Moves the Files
+    cd "/mnt/user/Videos/Youtube/Mystery Machine/Season 1/"
+    mv * "/mnt/user/Videos/Youtube/Cleetus McFarland/Season 19/" 
+	cd "/mnt/user/Videos/Youtube/Cleetus McFarland/Season 19/"
+	rename S01 S19 *.*
+	if [ $debug -ge "2" ]
+	then
+		echo "Mystery Machine processed."
+	fi
+    #Delete old folder
+    cd "/mnt/user/Videos/Youtube/"
+    rm -r "Mystery Machine/"
+    if [ $debug -ge "2" ]
+	then
+		echo "Folder deleted."
+	fi
+fi
+
+######################################################################################################################################
+#                                                          Freedom Factory                                                           #
+######################################################################################################################################
+
+#Check for the folder.
+if [[ -d "/mnt/user/Videos/Youtube/Freedom Factory/Season 1/" ]] 
+then
+
+    #Moves the Files
+    cd "/mnt/user/Videos/Youtube/Freedom Factory/Season 1/"
+    mv * "/mnt/user/Videos/Youtube/Cleetus McFarland/Season 20/" 
+	cd "/mnt/user/Videos/Youtube/Cleetus McFarland/Season 20/"
+	rename S01 S20 *.*
+	if [ $debug -ge "2" ]
+	then
+		echo "Freedom Factory processed."
+	fi
+    #Delete old folder
+    cd "/mnt/user/Videos/Youtube/"
+    rm -r "Freedom Factory/"
+    if [ $debug -ge "2" ]
+	then
+		echo "Folder deleted."
+	fi
+fi
+
+######################################################################################################################################
+#                                                          Donnie                                                           #
+######################################################################################################################################
+
+#Check for the folder.
+if [[ -d "/mnt/user/Videos/Youtube/Donnie/Season 1/" ]] 
+then
+
+    #Moves the Files
+    cd "/mnt/user/Videos/Youtube/Donnie/Season 1/"
+    mv * "/mnt/user/Videos/Youtube/Cleetus McFarland/Season 22/" 
+	cd "/mnt/user/Videos/Youtube/Cleetus McFarland/Season 22/"
+	rename S01 S22 *.*
+	if [ $debug -ge "2" ]
+	then
+		echo "Donnie Videos processed."
+	fi
+    #Delete old folder
+    cd "/mnt/user/Videos/Youtube/"
+    rm -r "Donnie/"
+    if [ $debug -ge "2" ]
+	then
+		echo "Folder deleted."
+	fi
+fi
+
+######################################################################################################################################
+#                                                          Hovercraft                                                           #
+######################################################################################################################################
+
+#Check for the folder.
+if [[ -d "/mnt/user/Videos/Youtube/Hovercraft/Season 1/" ]] 
+then
+
+    #Moves the Files
+    cd "/mnt/user/Videos/Youtube/Hovercraft/Season 1/"
+    mv * "/mnt/user/Videos/Youtube/Cleetus McFarland/Season 24/" 
+	cd "/mnt/user/Videos/Youtube/Cleetus McFarland/Season 24/"
+	rename S01 S24 *.*
+	if [ $debug -ge "2" ]
+	then
+		echo "Hovercraft processed."
+	fi
+    #Delete old folder
+    cd "/mnt/user/Videos/Youtube/"
+    rm -r "Hovercraft/"
+    if [ $debug -ge "2" ]
+	then
+		echo "Folder deleted."
+	fi
+fi
+
+######################################################################################################################################
+#                                                          The Wheelman Show                                                           #
+######################################################################################################################################
+
+#Check for the folder.
+if [[ -d "/mnt/user/Videos/Youtube/The Wheelman Show/Season 1/" ]] 
+then
+
+    #Moves the Files
+    cd "/mnt/user/Videos/Youtube/The Wheelman Show/Season 1/"
+    mv * "/mnt/user/Videos/Youtube/Cleetus McFarland/Season 26/" 
+	cd "/mnt/user/Videos/Youtube/Cleetus McFarland/Season 26/"
+	rename S01 S26 *.*
+	if [ $debug -ge "2" ]
+	then
+		echo "The Wheelman Show processed."
+	fi
+    #Delete old folder
+    cd "/mnt/user/Videos/Youtube/"
+    rm -r "The Wheelman Show/"
+    if [ $debug -ge "2" ]
+	then
+		echo "Folder deleted."
+	fi
+fi
+
+######################################################################################################################################
+#                                                          TJ Ferrari                                                           #
+######################################################################################################################################
+
+#Check for the folder.
+if [[ -d "/mnt/user/Videos/Youtube/Ferrari 458 Rebuild (In order)/Season 1/" ]] 
+then
+
+    #Moves the Files
+    cd "/mnt/user/Videos/Youtube/Ferrari 458 Rebuild (In order)/Season 1/"
+    mv * "/mnt/user/Videos/Youtube/TJ Hunt/Season 2/" 
+	cd "/mnt/user/Videos/Youtube/TJ Hunt/Season 2/"
+	rename S01 S2 *.*
+	if [ $debug -ge "2" ]
+	then
+		echo "TJ's Ferrari processed."
+	fi
+    #Delete old folder
+    cd "/mnt/user/Videos/Youtube/"
+    rm -r "Ferrari 458 Rebuild (In order)/"
+    if [ $debug -ge "2" ]
+	then
+		echo "Folder deleted."
+	fi
+fi
+
+######################################################################################################################################
+#                                                          TJ C8                                                           #
+######################################################################################################################################
+
+#Check for the folder.
+if [[ -d "/mnt/user/Videos/Youtube/Twin Turbo C8/Season 1/" ]] 
+then
+
+    #Moves the Files
+    cd "/mnt/user/Videos/Youtube/Twin Turbo C8/Season 1/"
+    mv * "/mnt/user/Videos/Youtube/TJ Hunt/Season 3/" 
+	cd "/mnt/user/Videos/Youtube/TJ Hunt/Season 3/"
+	rename S01 S3 *.*
+	if [ $debug -ge "2" ]
+	then
+		echo "TJ's Twin Turbo C8 processed."
+	fi
+    #Delete old folder
+    cd "/mnt/user/Videos/Youtube/"
+    rm -r "Twin Turbo C8/"
+    if [ $debug -ge "2" ]
+	then
+		echo "Folder deleted."
+	fi
+fi
+
+######################################################################################################################################
+#                                                      Ivan Miranda                                                       #
+######################################################################################################################################
+
+#Check for the folder.
+if [[ -d "/mnt/user/Videos/Youtube/BIG TANK MARK II/Season 1/" ]] 
+then
+
+    #Moves the Files
+    cd "/mnt/user/Videos/Youtube/BIG TANK MARK II/Season 1/"
+    mv * "/mnt/user/Videos/Youtube/Ivan Miranda/Season 2/" 
+	cd "/mnt/user/Videos/Youtube/Ivan Miranda/Season 2/"
+	rename S01 S02 *.*	
+	if [ $debug -ge "2" ]
+	then
+		echo "Sharper Sharpening processed."
+	fi
+    #Delete old folder
+    cd "/mnt/user/Videos/Youtube/"
+    rm -r "BIG TANK MARK II/"
+    if [ $debug -ge "2" ]
+	then
+		echo "Folder deleted."
+	fi
+fi
+
+######################################################################################################################################
+#                                                      Corridor VFX                                                                  #
+######################################################################################################################################
+
+#Check for the folder.
+if [[ -d "/mnt/user/Videos/Youtube/VFX ARTISTS REACT _ all episodes/Season 1/" ]] 
+then
+
+    #Moves the Files
+    cd "/mnt/user/Videos/Youtube/VFX ARTISTS REACT _ all episodes/Season 1/"
+    mv * "/mnt/user/Videos/Youtube/Corridor Digital/Season 4/" 
+	cd "/mnt/user/Videos/Youtube/Corridor Digital/Season 4/"
+	rename S01 S04 *.*
+	if [ $debug -ge "2" ]
+	then
+		echo "VFX Artists React processed."
+	fi
+    #Delete old folder
+    cd "/mnt/user/Videos/Youtube/"
+    rm -r "VFX ARTISTS REACT _ all episodes/"
+    if [ $debug -ge "2" ]
+	then
+		echo "Folder deleted."
+	fi
+fi
+
+######################################################################################################################################
+#                                                      Corridor VFX                                                                  #
+######################################################################################################################################
+
+#Check for the folder.
+if [[ -d "/mnt/user/Videos/Youtube/STUNTMEN REACT _ all episodes/Season 1/" ]] 
+then
+
+    #Moves the Files
+    cd "/mnt/user/Videos/Youtube/STUNTMEN REACT _ all episodes/Season 1/"
+    mv * "/mnt/user/Videos/Youtube/Corridor Digital/Season 5/" 
+	cd "/mnt/user/Videos/Youtube/Corridor Digital/Season 5/"
+	rename S01 S05 *.*
+	if [ $debug -ge "2" ]
+	then
+		echo "VFX Artists React processed."
+	fi
+    #Delete old folder
+    cd "/mnt/user/Videos/Youtube/"
+    rm -r "STUNTMEN REACT _ all episodes/"
+    if [ $debug -ge "2" ]
+	then
+		echo "Folder deleted."
+	fi
+fi
+
+######################################################################################################################################
+#                                                  Primitive Technology                                                              #
+######################################################################################################################################
+
+#Check for the folder.
+if [[ -d "/mnt/user/Videos/Youtube/Uploads from Primitive Technology/Season 1/" ]] 
+then
+
+    #Moves the Files
+    cd "/mnt/user/Videos/Youtube/Uploads from Primitive Technology/Season 1/"
+    mv * "/mnt/user/Videos/Youtube/Primitive Technology/Season 1/" 
+	cd "/mnt/user/Videos/Youtube/Primitive Technology/Season 1/"
+	if [ $debug -ge "2" ]
+	then
+		echo "Primitive Technology processed."
+	fi
+    #Delete old folder
+    cd "/mnt/user/Videos/Youtube/"
+    rm -r "Uploads from Primitive Technology/"
+    if [ $debug -ge "2" ]
+	then
+		echo "Folder deleted."
+	fi
+fi
+
+######################################################################################################################################
+#                                                Good Mythical Morning Manager                                                       #
+######################################################################################################################################
+
+
+#Set the folder name
+GMMSeason=1
+#Only run for upto season 17
+while [[ $GMMSeason -le 17 ]]
+do
+	#Set the current working folder location
+	GMM="/mnt/user/Videos/Youtube/Season "$GMMSeason" _ Good Mythical Morning/Season 1/"
+	GMMF="/mnt/user/Videos/Youtube/Season "$GMMSeason" _ Good Mythical Morning/"
+
+	#Check for the folder.
+	if [[ -d $GMM ]]
+	then
+	
+		#Moves the Files
+		cd "$GMM"
+		mv * "/mnt/user/Videos/Youtube/Good Mythical Morning/Season "$GMMSeason"/" 
+		cd "/mnt/user/Videos/Youtube/Good Mythical Morning/Season "$GMMSeason"/"
+		
+		#Rename the seasons
+		GMMRename="S"$GMMSeason
+		rename S01 $GMMRename *.*
+		if [ $debug -ge "2" ]
+		then
+			echo "GMM Season "$GMMSeason" processed."
+		fi
+		#Delete old folder
+		cd "/mnt/user/Videos/Youtube/"
+		rm -r "$GMMF"
+	fi
+	
+	#Check the next season
+	((GMMSeason++))
+
+done
+
+######################################################################################################################################
+#                                                      Youtube-dl Series                                                             #
+######################################################################################################################################
+
+debug=0
+echo "<font color='green'>Folder Sorting Done</font>"
+echo ""
+echo "<font color='blue'>Starting Youtube Downloads Organizer</font>"
+
+#Check for the folder.
+if [[ ! -d "/mnt/user/Videos/Youtube/Youtube Downloads/Season 1/" ]]
+then
+    echo "No Youtube-dl"
+fi
+
+#Start mover if folder exists
+if [[ -d "/mnt/user/Videos/Youtube/Youtube Downloads/Season 1/" ]] 
+then
+
+#Move to folder
+	cd "/mnt/user/Videos/Youtube/Youtube Downloads/Season 1/"
+	
+	
+#Start Rob Dahm File Counter
+	dahmEpisode=0
+	if [ $debug -ge "2" ]
+	then
+		echo "Searching Rob Dahm"
+	fi
+	#Check Rob Dahm
+	for f in *"Rob Dahm"*
+	do
+		[ -e "$f" ] && 	mv "$f" "/mnt/user/Videos/Youtube/Rob Dahm/Season 1/"
+		if [[ $dahm1Episode -gt "0" ]]
+		then
+			echo "$dahmEpisode Rob Dahm file processed."
+		fi
+		let "dahmEpisode++"
+	done
+	
+	
+#Start effspot File Counter
+	effEpisode=0
+	if [ $debug -ge "2" ]
+	then
+		echo "Searching effspot"
+	fi
+	#Check effspot
+	for f in *"effspot"*
+	do
+		[ -e "$f" ] && 	mv "$f" "/mnt/user/Videos/Youtube/effspot/Season 1/"
+		if [[ $effEpisode -gt "0" ]]
+		then
+			echo "$effEpisode effspot file processed."
+		fi
+		let "effEpisode++"
+	done
+	
+	
+#Start Peter Brown File Counter
+	peterEpisode=0
+	if [ $debug -ge "2" ]
+	then
+		echo "Searching Peter Brown"
+	fi
+	#Check Peter Brown
+	for f in *"Peter Brown"*
+	do
+		[ -e "$f" ] && 	mv "$f" "/mnt/user/Videos/Youtube/Peter Brown/Season 1/"
+		if [[ $peterEpisode -gt "0" ]]
+		then
+			echo "$peterEpisode Peter Brown file processed."
+		fi
+		let "peterEpisode++"
+	done
+	
+	
+#Start AvE File Counter
+	AvEEpisode=0
+	if [ $debug -ge "2" ]
+	then
+		echo "Searching AvE"
+	fi
+	#Check AvE
+	for f in *"AvE"*
+	do
+		[ -e "$f" ] && 	mv "$f" "/mnt/user/Videos/Youtube/AvE/Season 1/"
+		if [[ $AvEEpisode -gt "0" ]]
+		then
+			echo "$AvEEpisode AvE file processed."
+		fi
+		let "AvEEpisode++"
+	done
+	
+	
+#Start This Old Tony File Counter
+	totEpisode=0
+	if [ $debug -ge "2" ]
+	then
+		echo "Searching This Old Tony"
+	fi
+	#Check This Old Tony
+	for f in *"This Old Tony"*
+	do
+		[ -e "$f" ] && 	mv "$f" "/mnt/user/Videos/Youtube/This Old Tony/Season 1/"
+		if [[ $totEpisode -gt "0" ]]
+		then
+			echo "$totEpisode This Old Tony file processed."
+		fi
+		let "totEpisode++"
+	done
+	
+	
+#Start Project Farm File Counter
+	projEpisode=0
+	if [ $debug -ge "2" ]
+	then
+		echo "Searching Project Farm"
+	fi
+	#Check Project Farm
+	for f in *"Project Farm"*
+	do
+		[ -e "$f" ] && 	mv "$f" "/mnt/user/Videos/Youtube/Project Farm/Season 1/"
+		if [[ $projEpisode -gt "0" ]]
+		then
+			echo "$projEpisode Project Farm file processed."
+		fi
+		let "projEpisode++"
+	done
+
+
+#Start Boosted Lifestyle File Counter
+	bstlEpisode=0
+	if [ $debug -ge "2" ]
+	then
+		echo "Searching Boosted Lifestyle"
+	fi
+	#Check Boosted Lifestyle
+	for f in *"Boosted Lifestyle"*
+	do
+		[ -e "$f" ] && 	mv "$f" "/mnt/user/Videos/Youtube/Boosted Lifestyle/Season 1/"
+		if [[ $bstlEpisode -gt "0" ]]
+		then
+			echo "$bstlEpisode Boosted Lifestyle file processed."
+		fi
+		let "bstlEpisode++"
+	done
+
+
+#Start Westen Champlin File Counter
+	champEpisode=0
+	if [ $debug -ge "2" ]
+	then
+		echo "Searching Westen Champlin"
+	fi
+	#Check Westen Champlin
+	for f in *"Westen Champlin"*
+	do
+		[ -e "$f" ] && 	mv "$f" "/mnt/user/Videos/Youtube/Westen Champlin/Season 1/"
+		if [[ $champEpisode -gt "0" ]]
+		then
+			echo "$champEpisode Westen Champlin file processed."
+		fi
+		let "champEpisode++"
+	done
+	
+#Start Gourmet Makes File Counter
+	gormEpisode=0
+	if [ $debug -ge "2" ]
+	then
+		echo "Searching Gourmet Makes"
+	fi
+	#Check Gourmet Makes
+	for f in *"Pastry Chef Attempts to Make"*"Bon App"*
+	do
+		[ -e "$f" ] && 	mv "$f" "/mnt/user/Videos/Youtube/Gourmet Makes/Season 1/"
+		if [[ $gormEpisode -gt "0" ]]
+		then
+			echo "$gormEpisode Gourmet Makes file processed."
+		fi
+		let "gormEpisode++"
+	done
+
+#Start It's Alive File Counter
+	itsaEpisode=0
+	if [ $debug -ge "2" ]
+	then
+		echo "Searching It's Alive"
+	fi
+	#Check It's Alive
+	for f in *"It's Alive"*"Bon App"*
+	do
+		[ -e "$f" ] && 	mv "$f" "/mnt/user/Videos/Youtube/It's Alive with Brad/Season 3/"
+		if [[ $itsaEpisode -gt "0" ]]
+		then
+			echo "$itsaEpisode It's Alive file processed."
+		fi
+		let "itsaEpisode++"
+	done
+	if [[ -d "/mnt/user/Videos/Youtube/It's Alive with Brad/Season 3/" ]]
+	then
+		cd "/mnt/user/Videos/Youtube/It's Alive with Brad/Season 3/"
+		rename S01 S03 *.*
+		#Move back to original folder
+		cd "/mnt/user/Videos/Youtube/Youtube Downloads/Season 1/"
+	fi
+
+#Start Hot Ones File Counter
+	hot1Episode=0
+	if [ $debug -ge "2" ]
+	then
+		echo "Searching Hot Ones"
+	fi
+	#Check Hot Ones 
+	for f in *"Hot Ones"*
+	do
+		[ -e "$f" ] && 	mv "$f" "/mnt/user/Videos/Youtube/Hot Ones/Season 1/"
+		if [[ $hot1Episode -gt "0" ]]
+		then
+			echo "$hot1Episode Hot Ones file processed."
+		fi
+		let "hot1Episode++"
+	done	
+
+#Start Corridor Crew File Counter
+	corcEpisode=0
+	if [ $debug -ge "2" ]
+	then
+		echo "Searching Corridor Crew"
+	fi
+	#Check Corridor Crew 
+	for f in *"Corridor Crew"*
+	do
+		[ -e "$f" ] && 	mv "$f" "/mnt/user/Videos/Youtube/Corridor Digital/Season 2/"
+		if [[ $corcEpisode -gt "0" ]]
+		then
+			echo "$corcEpisode Corridor Crew file processed."
+		fi
+		let "corcEpisode++"
+	done
+	if [[ -d "/mnt/user/Videos/Youtube/Corridor Digital/Season 2/" ]]
+	then
+		cd "/mnt/user/Videos/Youtube/Corridor Digital/Season 2/"
+		rename S01 S02 *.*
+		#Move back to original folder
+		cd "/mnt/user/Videos/Youtube/Youtube Downloads/Season 1/"
+	fi
+
+#Start Corridor Digital File Counter
+	cordEpisode=0
+	if [ $debug -ge "2" ]
+	then
+		echo "Searching Corridor Digital"
+	fi
+	#Check Corridor Digital 
+	for f in *"Corridor"*
+	do
+		[ -e "$f" ] && 	mv "$f" "/mnt/user/Videos/Youtube/Corridor Digital/Season 1/"
+		if [[ $cordEpisode -gt "0" ]]
+		then
+			echo "$cordEpisode Corridor Digital file processed."
+		fi
+		let "cordEpisode++"
+	done
+	
+#Start Salvage Giveaway Counter
+	salvageEpisode=0
+	if [ $debug -ge "2" ]
+	then
+		echo "Searching Salvage Giveaway"
+	fi
+	#Check Salvage Giveaway
+	for f in *"Salvage Giveaway"*
+	do
+		[ -e "$f" ] && mv "$f" "/mnt/user/Videos/Youtube/Salvage Giveaway/Season 1/"
+		if [[ $salvageEpisode -gt "0" ]]
+		then
+			echo "$salvageEpisode Salvage Giveaway file processed." 
+		fi
+		let "salvageEpisode++"
+	done
+	
+#Start Scrapyard Wars File Counter
+	sywEpisode=0
+	if [ $debug -ge "2" ]
+	then
+		echo "Searching Scrapyard Wars"
+	fi
+	#Check Scrapyard Wars
+	for f in *"Scrapyard Wars"*
+	do
+		[ -e "$f" ] && mv "$f" "/mnt/user/Videos/Youtube/Watch More Scrapyard Wars/Season 1/"
+		if [[ $sywEpisode -gt "0" ]]
+		then
+			echo "$sywEpisode Scrapyard Wars file processed." 
+		fi
+		let "sywEpisode++"
+	done
+	
+	
+######################################################################################################################################
+#                                                Youtube-dl Channel Organizer                                                        #
+######################################################################################################################################
+
+#Start Mark Rober File Counter
+	mrEpisode=0
+	if [ $debug -ge "2" ]
+	then
+		echo "Searching Mark Rober"
+	fi
+	#Check Mark Rober
+	for f in *" - Mark Rober"*
+	do
+		[ -e "$f" ] && mv "$f" "/mnt/user/Videos/Youtube/Mark Rober/Season 1/" 
+		if [[ $mrEpisode -gt "0" ]]
+		then
+			echo "$mrEpisode Mark Rober file processed." 
+		fi	
+		let "mrEpisode++" 
+	done
+	
+#Start Linus Tech Tips File Counter
+	lttEpisode=0
+	if [ $debug -ge "2" ]
+	then
+		echo "Searching Linus Tech Tips"
+	fi
+	#Check Linus Tech Tips
+	for f in *" - Linus Tech Tips"*
+	do
+		[ -e "$f" ] && mv "$f" "/mnt/user/Videos/Youtube/Linus Tech Tips/Season 1/" 
+		if [[ $lttEpisode -gt "0" ]]
+		then
+			echo "$lttEpisode Linus Tech Tips file processed." 
+		fi	
+		let "lttEpisode++" 
+	done
+	
+#Start Cleetus McFarland File Counter
+	cmEpisode=0
+	if [ $debug -ge "2" ]
+	then
+		echo "Searching Cleetus McFarland"
+	fi
+	#Check Cleetus McFarland
+	for f in *" - Cleetus McFarland"*
+	do
+		[ -e "$f" ] && mv "$f" "/mnt/user/Videos/Youtube/Cleetus McFarland/Season 1/" 
+		if [[ $cmEpisode -gt "0" ]]
+		then
+			echo "$cmEpisode Cleetus McFarland file processed." 
+		fi	
+		let "cmEpisode++"
+	done
+	
+#Start TJ Hunt Counter
+	tjEpisode=0
+	if [ $debug -ge "2" ]
+	then
+		echo "Searching TJ Hunt"
+	fi
+	#Check TJ Hunt
+	for f in *" - Tj Hunt"*
+	do
+		[ -e "$f" ] && mv "$f" "/mnt/user/Videos/Youtube/TJ Hunt/Season 1/" 
+		if [[ $tjEpisode -gt "0" ]]
+		then
+			echo "$tjEpisode TJ Hunt file processed." 
+		fi	
+		let "tjEpisode++"
+	done
+	
+#Start Adam LZ Counter
+	lzEpisode=0
+	if [ $debug -ge "2" ]
+	then
+		echo "Searching Adam LZ"
+	fi
+	#Check TJ Hunt
+	for f in *" - Adam LZ"*
+	do
+		[ -e "$f" ] && mv "$f" "/mnt/user/Videos/Youtube/Adam LZ/Season 1/" 
+		if [[ $lzEpisode -gt "0" ]]
+		then
+			echo "$lzEpisode Adam LZ file processed." 
+		fi	
+		let "lzEpisode++"
+	done
+	
+#Start Smarter Every Day File Counter
+	sedEpisode=0
+	if [ $debug -ge "2" ]
+	then
+		echo "Searching SmarterEveryDay"
+	fi
+	#Check Smarter Every Day
+	for f in *" - SmarterEveryDay"*
+	do
+		[ -e "$f" ] && mv "$f" "/mnt/user/Videos/Youtube/Smarter Every Day/Season 1/" 
+		if [[ $sedEpisode -gt "0" ]]
+		then
+			echo "$sedEpisode Smarter Every Day file processed." 
+		fi
+		let "sedEpisode++" 
+	done	
+	
+#Start Jablinski Games File Counter
+	jabEpisode=0
+	if [ $debug -ge "2" ]
+	then
+		echo "Searching Jablinski Games"
+	fi
+	#Check Jablinski Games
+	for f in *" - Jablinski"*"Games"*
+	do
+		[ -e "$f" ] && mv "$f" "/mnt/user/Videos/Youtube/Jablinski Games/Season 1/" 
+		if [[ $jabEpisode -gt "0" ]]
+		then
+			echo "$jabEpisode Jablinski Games file processed." 
+		fi
+		let "jabEpisode++"
+	done	
+	
+#Start Salomondrin File Counter
+	salEpisode=0
+	if [ $debug -ge "2" ]
+	then
+		echo "Searching Salomondrin"
+	fi
+	#Check Salomondrin
+	for f in *" - Salomondrin"*
+	do
+		[ -e "$f" ] && mv "$f" "/mnt/user/Videos/Youtube/Salomondrin/Season 1/" 
+		if [[ $salEpisode -gt "0" ]]
+		then
+			echo "$salEpisode Salomondrin file processed."
+		fi
+		let "salEpisode++"
+	done	
+	
+#Start Ivan Miranda File Counter
+	ivanEpisode=0
+	if [ $debug -ge "2" ]
+	then
+		echo "Searching Ivan Miranda"
+	fi
+	#Check Ivan Miranda
+	for f in *" - Ivan Miranda"*
+	do
+		[ -e "$f" ] && mv "$f" "/mnt/user/Videos/Youtube/Ivan Miranda/Season 1/" 
+		if [[ $ivanEpisode -gt "0" ]]
+		then
+			echo "$ivanEpisode Ivan Miranda file processed."
+		fi
+		let "ivanEpisode++"
+	done	
+	
+#Add space for readability
+	echo " "
+fi
+
+######################################################################################################################################
+#                                                      File Renumberer                                                            #
+######################################################################################################################################
+
+if [[ -d "/boot/config/plugins/user.scripts/scripts/File Renumberer" ]]
+then
+	cd "/boot/config/plugins/user.scripts/scripts/File Renumberer"
+	sh script
+fi
+
